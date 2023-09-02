@@ -13,13 +13,17 @@ possibleChoices.forEach(x => x.addEventlistener('click', (e) => {
     getResult()
 }))
 
-generateComputerChoice() {
-    const randomNumber = Math.floor(Math.random() * 3)
+function generateComputerChoice() {
+    const randomNumber = Math.floor(Math.random() * 3);
     switch (randomNumber) {
-        case 1: computerChoice  = 'rock'
-        case 2: computerChoice = 'scissors'
-        case 3: computerChoice = 'paper'
+        case 1: computerChoice  = 'rock' 
+        break;
+        case 2: computerChoice = 'scissors' 
+        break;
+        case 3: computerChoice = 'paper' 
+        break;
     }
+    computerChoiceDisplay.innerHTML = computerChoice
 }
 
 function getResult() {
