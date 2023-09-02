@@ -1,8 +1,9 @@
-const computerChoice = document.getElementById("computer-choice")
+const computerChoiceDisplay = document.getElementById("computer-choice")
 const userChoiceDisplay = document.getElementById("user-choice")
 const resultDisplay = document.getElementById("result")
 const possibleChoices = document.querySelectorAll('button') //picks all the buttons
 let userChoice
+let computerChoice
 let result
 
 
@@ -16,11 +17,11 @@ possibleChoices.forEach(x => x.addEventListener('click', (e) => {
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3);
     switch (randomNumber) {
-        case 1: computerChoice  = 'rock' 
+        case 0: computerChoice  = 'rock' 
         break;
-        case 2: computerChoice = 'scissors' 
+        case 1: computerChoice = 'scissors' 
         break;
-        case 3: computerChoice = 'paper' 
+        case 2: computerChoice = 'paper' 
         break;
     }
     computerChoiceDisplay.innerHTML = computerChoice
