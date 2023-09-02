@@ -5,7 +5,7 @@ const possibleChoices = document.querySelectorAll('button') //picks all the butt
 let userChoice
 
 
-possibleChoice.forEach(x => x.addEventlistener('click', (e) => {
+possibleChoices.forEach(x => x.addEventlistener('click', (e) => {
     userChoice = e.target.id
     userChoiceDisplay.innerHTML = userChoice //on each click, the user choice inner html is updated 
 }))
