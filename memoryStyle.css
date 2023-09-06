@@ -1,0 +1,17 @@
+#grid {
+    text-align: center; /* Center-align the images in the grid */
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    display: inline-block; /* Display images in a row */
+    /*margin: 5px; /* Add some margin between images for spacing */
+}
+
+/* Optionally, you can style the container for additional spacing between rows */
+.row {
+    margin-bottom: 10px; /* Margin between rows */
+}
